@@ -3,13 +3,17 @@ $(document).ready(function() {
 	var magnifPopup = function() {
 		$('.image-popup').magnificPopup({
 			type: 'image',
-			removalDelay: 300,
-			mainClass: 'mfp-with-zoom',
+			removalDelay: 0,
+			mainClass: 'mfp-fade mfp-large-view',
+			fixedContentPos: true,
+			image: {
+				verticalFit: true
+			},
 			gallery:{
 				enabled:true
 			},
 			zoom: {
-				enabled: true, // By default it's false, so don't forget to enable it
+				enabled: false,
 
 				duration: 300, // duration of the effect, in milliseconds
 				easing: 'ease-in-out', // CSS transition easing function
