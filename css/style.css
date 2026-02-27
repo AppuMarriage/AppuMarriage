@@ -515,6 +515,16 @@ figure {
   margin-bottom: auto;
 }
 
+.event-map-link {
+  display: block;
+  margin-bottom: auto;
+}
+
+.event-map-link iframe,
+.event-map-link .event-map-frame {
+  pointer-events: none;
+}
+
 #fh5co-event .event-wrap:hover {
   -webkit-box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
